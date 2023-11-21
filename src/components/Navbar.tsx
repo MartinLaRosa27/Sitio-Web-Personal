@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
-import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
@@ -26,7 +25,9 @@ export const NavBar = () => {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
+          <h3 className="titulo-home">
+            {"<"}Martín La Rosa{"/>"}
+          </h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
