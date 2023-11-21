@@ -1,6 +1,14 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaBootstrap,
+  FaReact,
+  FaGithub,
+} from "react-icons/fa";
+import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
+import { SiTypescript, SiGraphql, SiMysql } from "react-icons/si";
+import { RiEnglishInput } from "react-icons/ri";
 import Carousel from "react-multi-carousel";
 import colorSharp from "../assets/img/color-sharp.png";
 import "react-multi-carousel/lib/styles.css";
@@ -10,11 +18,11 @@ export const Skills = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 6,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 5,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -44,20 +52,52 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <FaHtml5 />
+                  <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <FaCss3Alt />
+                  <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <FaSass />
+                  <h5>SCSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <FaBootstrap />
+                  <h5>Bootstrap</h5>
+                </div>
+                <div className="item">
+                  <IoLogoJavascript />
+                  <h5>JavaScript</h5>
+                </div>
+                <div className="item">
+                  <SiTypescript />
+                  <h5>TypeScript</h5>
+                </div>
+                <div className="item">
+                  <FaReact />
+                  <h5>React.js</h5>
+                </div>
+                <div className="item">
+                  <IoLogoNodejs />
+                  <h5>Node.js</h5>
+                </div>
+                <div className="item">
+                  <SiGraphql />
+                  <h5>GraphQL</h5>
+                </div>
+                <div className="item">
+                  <SiMysql />
+                  <h5>MySQL</h5>
+                </div>
+                <div className="item">
+                  <FaGithub />
+                  <h5>GitHub</h5>
+                </div>
+                <div className="item">
+                  <RiEnglishInput />
+                  <h5>Inglés Int./Av.</h5>
                 </div>
               </Carousel>
             </div>

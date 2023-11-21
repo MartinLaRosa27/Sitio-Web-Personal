@@ -72,7 +72,7 @@ export const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="First Name"
+                          placeholder="Nombre"
                           onChange={(e) =>
                             onFormUpdate("firstName", e.target.value)
                           }
@@ -82,7 +82,7 @@ export const Contact = () => {
                         <input
                           type="email"
                           value={formDetails.email}
-                          placeholder="Email Address"
+                          placeholder="Dirección de email"
                           onChange={(e) =>
                             onFormUpdate("email", e.target.value)
                           }
@@ -91,7 +91,7 @@ export const Contact = () => {
                       <Col size={12} className="px-1">
                         <textarea
                           value={formDetails.message}
-                          placeholder="Message"
+                          placeholder="Mensaje"
                           onChange={(e) =>
                             onFormUpdate("message", e.target.value)
                           }
