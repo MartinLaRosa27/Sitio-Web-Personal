@@ -172,6 +172,14 @@ span.navbar-text {
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
+.social-icon a svg {
+  color: #fff;
+}
+.social-icon a:hover svg {
+  color: black !important;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
+}
 .social-icon a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);

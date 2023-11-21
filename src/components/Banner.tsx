@@ -72,11 +72,10 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Soy un apasionado desarrollador web junior y estudiante en
+                    el último año de la Tecnicatura en Programación de Sistemas.
+                    Mi objetivo es contribuir al mundo digital con soluciones
+                    creativas y funcionales.
                   </p>
                 </div>
               )}
