@@ -1,44 +1,23 @@
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useForm } from "@formspree/react";
+import { toast } from "react-hot-toast";
 import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: "",
-    email: "",
-    message: "",
-  };
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [status, setStatus] = useState<any>({});
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE);
 
-  const onFormUpdate = (category: any, value: any) => {
-    setFormDetails({
-      ...formDetails,
-      [category]: value,
-    });
-  };
-
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
+  if (state.succeeded) {
+    toast.success("Mensaje enviado con éxito!", {
+      style: {
+        background: "#333",
+        color: "#fff",
+        fontWeight: "bold",
+        textAlign: "center",
+        marginTop: "80px",
       },
-      body: JSON.stringify(formDetails),
     });
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
-    }
-  };
+  }
 
   return (
     <section className="contact" id="connect">
@@ -71,46 +50,35 @@ export const Contact = () => {
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
-                          value={formDetails.firstName}
                           placeholder="Nombre"
-                          onChange={(e) =>
-                            onFormUpdate("firstName", e.target.value)
-                          }
+                          name="firstName"
+                          id="firstName"
+                          required
                         />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="email"
-                          value={formDetails.email}
+                          name="email"
                           placeholder="Dirección de email"
-                          onChange={(e) =>
-                            onFormUpdate("email", e.target.value)
-                          }
+                          id="email"
                         />
                       </Col>
                       <Col size={12} className="px-1">
                         <textarea
-                          value={formDetails.message}
                           placeholder="Mensaje"
-                          onChange={(e) =>
-                            onFormUpdate("message", e.target.value)
-                          }
-                        ></textarea>
-                        <button type="submit" className="btn-enviar">
+                          id="message"
+                          name="message"
+                          required
+                        />
+                        <button
+                          type="submit"
+                          className="btn-enviar"
+                          disabled={state.submitting}
+                        >
                           <span>{"Enviar"}</span>
                         </button>
                       </Col>
-                      {status.message && (
-                        <Col>
-                          <p
-                            className={
-                              status.success === false ? "danger" : "success"
-                            }
-                          >
-                            {status.message}
-                          </p>
-                        </Col>
-                      )}
                     </Row>
                   </form>
                 </div>
