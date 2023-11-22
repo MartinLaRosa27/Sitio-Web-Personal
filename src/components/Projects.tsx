@@ -1,21 +1,35 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import agrimaster from "../assets/img/proyectos/agrimaster.webp";
+import construmall from "../assets/img/proyectos/construmall.webp";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projects = [
+  const projectsPersonal = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "SoccerStore",
+      description:
+        "html, scss, JavaScript, TypeScript, React.js, Vite, Node.js, MySQL & GraphQL",
+      imgUrl: agrimaster,
+      url: "https://soccerstore.netlify.app/",
+    },
+  ];
+
+  const projectsVirtualPro = [
+    {
+      title: "Agrimaster",
+      description:
+        "html, scss, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
+      imgUrl: agrimaster,
+      url: "https://www.agrimastersrl.com.bo/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Construmall",
+      description:
+        "html, scss, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
+      imgUrl: construmall,
+      url: "https://www.construmall.com.bo/",
     },
   ];
 
@@ -58,19 +72,17 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projectsPersonal.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {projectsVirtualPro.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
