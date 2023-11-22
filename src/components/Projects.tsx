@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import agrimaster from "../assets/img/proyectos/agrimaster.webp";
 import construmall from "../assets/img/proyectos/construmall.webp";
+import soccerstore from "../assets/img/proyectos/soccerstore.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 
@@ -10,8 +11,8 @@ export const Projects = () => {
     {
       title: "SoccerStore",
       description:
-        "html, scss, JavaScript, TypeScript, React.js, Vite, Node.js, MySQL & GraphQL",
-      imgUrl: agrimaster,
+        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js, MySQL & GraphQL",
+      imgUrl: soccerstore,
       url: "https://soccerstore.netlify.app/",
     },
   ];
@@ -20,14 +21,14 @@ export const Projects = () => {
     {
       title: "Agrimaster",
       description:
-        "html, scss, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
+        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
       imgUrl: agrimaster,
       url: "https://www.agrimastersrl.com.bo/",
     },
     {
       title: "Construmall",
       description:
-        "html, scss, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
+        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
       imgUrl: construmall,
       url: "https://www.construmall.com.bo/",
     },
