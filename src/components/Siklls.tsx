@@ -40,7 +40,7 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Habilidades</h2>
+              <h2 className="text-uppercase">Habilidades</h2>
               <p>
                 ¡Bienvenido/a a la sección de habilidades! Como programador web,
                 he cultivado un conjunto diverso de habilidades que me permite
