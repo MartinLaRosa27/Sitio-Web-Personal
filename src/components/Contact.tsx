@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useForm } from "@formspree/react";
 import { toast } from "react-hot-toast";
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../assets/img/contact-img.webp";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
@@ -24,7 +24,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
+            <TrackVisibility className="img-cont-cont">
               {({ isVisible }) => (
                 <img
                   className={
