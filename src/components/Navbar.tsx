@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import larosa_cv from "../larosa_cv.pdf";
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,9 +16,7 @@ export const NavBar = () => {
         setScrolled(false);
       }
     };
-
     window.addEventListener("scroll", onScroll);
-
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -35,13 +34,20 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#skills" className={"navbar-link text-uppercase"}>
-              habilidades
+              Habilidades
             </Nav.Link>
             <Nav.Link href="#projects" className={"navbar-link text-uppercase"}>
               Proyectos
             </Nav.Link>
             <Nav.Link href="#connect" className={"navbar-link text-uppercase"}>
-              contacto
+              Contacto
+            </Nav.Link>
+            <Nav.Link
+              href={larosa_cv}
+              download="La Rosa CV"
+              className={"navbar-link text-uppercase"}
+            >
+              DESCARGAR CV
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
