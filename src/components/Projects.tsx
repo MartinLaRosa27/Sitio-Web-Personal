@@ -13,7 +13,8 @@ export const Projects = () => {
       description:
         "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js, MySQL & GraphQL",
       imgUrl: soccerstore,
-      url: "https://soccerstore.netlify.app/",
+      // url: "https://soccerstore.netlify.app/",
+      url: "https://github.com/MartinLaRosa27/SoccerStore",
     },
   ];
 
@@ -46,7 +47,7 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2 className="text-uppercase">Proyectos</h2>
+                  <h2 className="titulo-secciones">Proyectos</h2>
                   <p>
                     ¡Bienvenido/a a la sección de proyectos! Cada proyecto es
                     una oportunidad para explorar nuevas tecnologías,

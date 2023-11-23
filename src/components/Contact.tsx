@@ -44,7 +44,7 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2 className="text-uppercase">Contacto</h2>
+                  <h2 className="titulo-secciones">Contacto</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">

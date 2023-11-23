@@ -109,8 +109,34 @@ p.danger {
   color: red;
 }
 
+.titulo-secciones {
+  text-transform: uppercase;
+
+  @media (max-width: 576px) {
+    font-size: 2.1rem !important;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
 /************ Navbar Css ************/
 .titulo-home {
+  color: #d7d7d7;
+  margin: 0;
+
+  @media (max-width: 576px) {
+    text-align: center;
+    margin: 20px 0 20px;
+  }
+}
+
+.btn-enviar {
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.titulo-footer {
   color: rgb(215, 215, 215);
   margin: 0;
 
@@ -202,13 +228,11 @@ span.navbar-text {
 
 .social-icon a:hover svg {
   color: black !important;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .navbar-text button {
@@ -322,11 +346,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
-  );
+  background: linear-gradient(90.21deg,
+      rgba(170, 54, 124, 0.5) -5.91%,
+      rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -394,7 +416,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.txt-rotate > .wrap {
+.txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
 
@@ -447,9 +469,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   background-color: black;
+
+
+  @media (max-width: 576px) {
+    padding: 0px 0px 20px;
+
+  }
 }
 
 .project h2 {
@@ -465,7 +493,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
 }
 
 .project .nav.nav-pills {
