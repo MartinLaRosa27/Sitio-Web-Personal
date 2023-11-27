@@ -122,13 +122,15 @@ p.danger {
 /************ Navbar Css ************/
 
 .navbar {
-  .container {
-    background-color: black;
+  @media (max-width: 768px) {
+    .container {
+      background-color: black;
+    }
   }
 }
 
 .navbar-collapse {
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     text-align: center;
 
     a {
@@ -138,7 +140,7 @@ p.danger {
 }
 
 .navbar-text {
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,6 +188,10 @@ nav.navbar {
 
   @media (min-width: 768px) {
     transition: 0.32s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 0 !important;
   }
 }
 
