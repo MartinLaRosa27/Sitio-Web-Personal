@@ -14,8 +14,8 @@ export const Projects = () => {
       description:
         "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js, MySQL & GraphQL",
       imgUrl: soccerstore,
-      // url: "https://soccerstore.netlify.app/",
-      url: "https://github.com/MartinLaRosa27/SoccerStore",
+      url: "https://soccerstore.netlify.app/",
+      // url: "https://github.com/MartinLaRosa27/SoccerStore",
     },
     {
       title: "Sitio Web Personal",
