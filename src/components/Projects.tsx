@@ -22,7 +22,7 @@ export const Projects = () => {
       description:
         "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js & Vite",
       imgUrl: sitioWebPersonal,
-      url: "https://larosamartin.com.ar/",
+      url: "https://larosamartin.netlify.app",
     },
   ];
 
