@@ -13,7 +13,7 @@ export const Projects = () => {
     {
       title: "SoccerStore",
       description:
-        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js, MySQL & GraphQL",
+        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / GraphQL / MySQL",
       imgUrl: soccerstore,
       url: "https://soccerstore.netlify.app/",
       // url: "https://github.com/MartinLaRosa27/SoccerStore",
@@ -21,14 +21,14 @@ export const Projects = () => {
     {
       title: "Doctor Web",
       description:
-        "HTML, CSS, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite & ChatGPT",
+        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / ChatGPT",
       imgUrl: doctorweb,
       url: "https://lrdoctorweb.netlify.app/",
     },
     {
       title: "Sitio Web Personal",
       description:
-        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js & Vite",
+        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite",
       imgUrl: sitioWebPersonal,
       url: "https://larosamartin.netlify.app",
     },
@@ -38,14 +38,14 @@ export const Projects = () => {
     {
       title: "Agrimaster",
       description:
-        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
+        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / Express / MySQL",
       imgUrl: agrimaster,
       url: "https://www.agrimastersrl.com.bo/",
     },
     {
       title: "Construmall",
       description:
-        "HTML, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite, Node.js & MySQL",
+        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / Express / MySQL",
       imgUrl: construmall,
       url: "https://www.construmall.com.bo/",
     },
