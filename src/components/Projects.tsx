@@ -2,7 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import agrimaster from "../assets/img/proyectos/agrimaster.webp";
 import construmall from "../assets/img/proyectos/construmall.webp";
-import soccerstore from "../assets/img/proyectos/soccerstore.png";
+import soccerstore from "../assets/img/proyectos/soccerstore.webp";
+import doctorweb from "../assets/img/proyectos/doctorweb.webp";
 import sitioWebPersonal from "../assets/img/proyectos/sitio-personal.webp";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
@@ -16,6 +17,13 @@ export const Projects = () => {
       imgUrl: soccerstore,
       url: "https://soccerstore.netlify.app/",
       // url: "https://github.com/MartinLaRosa27/SoccerStore",
+    },
+    {
+      title: "Doctor Web",
+      description:
+        "HTML, CSS, SCSS, Bootstrap, JavaScript, TypeScript, React.js, Vite & ChatGPT",
+      imgUrl: doctorweb,
+      url: "https://lrdoctorweb.netlify.app/",
     },
     {
       title: "Sitio Web Personal",
