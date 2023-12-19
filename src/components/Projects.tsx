@@ -16,7 +16,7 @@ export const Projects = () => {
         "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / GraphQL / MySQL",
       imgUrl: soccerstore,
       url: "https://soccerstore.netlify.app/",
-      // url: "https://github.com/MartinLaRosa27/SoccerStore",
+      github: "https://github.com/MartinLaRosa27/SoccerStore",
     },
     {
       title: "Doctor Web",
@@ -24,6 +24,7 @@ export const Projects = () => {
         "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / ChatGPT",
       imgUrl: doctorweb,
       url: "https://lrdoctorweb.netlify.app/",
+      github: "https://github.com/MartinLaRosa27/Doctor-Web",
     },
     {
       title: "Sitio Web Personal",
@@ -31,6 +32,7 @@ export const Projects = () => {
         "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite",
       imgUrl: sitioWebPersonal,
       url: "https://larosamartin.netlify.app",
+      github: "https://github.com/MartinLaRosa27/Sitio-Web-Personal",
     },
   ];
 
@@ -41,6 +43,7 @@ export const Projects = () => {
         "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / Express / MySQL",
       imgUrl: agrimaster,
       url: "https://www.agrimastersrl.com.bo/",
+      github: false,
     },
     {
       title: "Construmall",
@@ -48,6 +51,7 @@ export const Projects = () => {
         "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / Express / MySQL",
       imgUrl: construmall,
       url: "https://www.construmall.com.bo/",
+      github: false,
     },
   ];
 
@@ -91,14 +95,18 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projectsPersonal.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <ProjectCard key={index} project={project} />
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
                           {projectsVirtualPro.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <ProjectCard key={index} project={project} />
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
