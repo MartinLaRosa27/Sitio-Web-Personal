@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 export const ProjectCard = (props: { project: any }) => {
   const handleClick = () => {
-    if (props.project.github) {
+    if (props.project.github && props.project.url) {
       Swal.fire({
         showCloseButton: true,
         showDenyButton: true,
@@ -18,8 +18,10 @@ export const ProjectCard = (props: { project: any }) => {
           window.open(props.project.github, "_blank");
         }
       });
-    } else {
+    } else if (props.project.url) {
       window.open(props.project.url, "_blank");
+    } else if (props.project.github) {
+      window.open(props.project.github, "_blank");
     }
   };
 
