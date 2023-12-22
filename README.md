@@ -14,7 +14,7 @@ HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite
 
 ### Screenshots:
 
-![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshots1.png?raw=true)
-![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshots2.png?raw=true)
-![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshots3.png?raw=true)
-![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshots4.png?raw=true)
+![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshot1.png?raw=true)
+![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshot2.png?raw=true)
+![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshot3.png?raw=true)
+![alt text](https://github.com/MartinLaRosa27/Sitio-Web-Personal/blob/main/resources/screenshot4.png?raw=true)
