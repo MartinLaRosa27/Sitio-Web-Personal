@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import agrimaster from "../assets/img/proyectos/agrimaster.webp";
 import construmall from "../assets/img/proyectos/construmall.webp";
 import soccerstore from "../assets/img/proyectos/soccerstore.webp";
+import uptask2023 from "../assets/img/proyectos/uptask2023.webp";
 import doctorweb from "../assets/img/proyectos/doctorweb.webp";
 import sitioWebPersonal from "../assets/img/proyectos/sitio-personal.webp";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -27,11 +28,19 @@ export const Projects = () => {
       github: "https://github.com/MartinLaRosa27/Doctor-Web",
     },
     {
+      title: "UpTask 2023",
+      description:
+        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Next.js / Node.js / Express / GraphQL / MySQL",
+      imgUrl: uptask2023,
+      url: false,
+      github: "https://github.com/MartinLaRosa27/UpTask",
+    },
+    {
       title: "Sitio Web Personal",
       description:
         "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite",
       imgUrl: sitioWebPersonal,
-      url: "https://larosamartin.netlify.app",
+      url: "https://larosamartin.netlify.app/",
       github: "https://github.com/MartinLaRosa27/Sitio-Web-Personal",
     },
   ];
