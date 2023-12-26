@@ -521,6 +521,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   @media (max-width: 576px) {
     padding: 0px 0px 20px;
   }
+
+  .link-github {
+    a {
+      color: #aa367c;
+      text-decoration: underline;
+      font-weight: bold;
+
+      &:hover {
+        color: #4a2fbd;
+        transition: 0.3s;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .project h2 {

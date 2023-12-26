@@ -124,6 +124,12 @@ export const Projects = () => {
                 </div>
               )}
             </TrackVisibility>
+            <p className="link-github">
+              Más proyectos disponibles en mi cuenta{" "}
+              <a href="https://github.com/MartinLaRosa27" target="_blank">
+                GitHub
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>
