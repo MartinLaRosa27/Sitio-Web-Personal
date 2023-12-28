@@ -1,11 +1,4 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaSass,
-  FaBootstrap,
-  FaReact,
-  FaGithub,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import { SiTypescript, SiGraphql, SiMysql } from "react-icons/si";
 import { RiEnglishInput } from "react-icons/ri";
@@ -62,10 +55,6 @@ export const Skills = () => {
                 <div className="item">
                   <FaSass />
                   <h5>SCSS</h5>
-                </div>
-                <div className="item">
-                  <FaBootstrap />
-                  <h5>Bootstrap</h5>
                 </div>
                 <div className="item">
                   <IoLogoJavascript />
