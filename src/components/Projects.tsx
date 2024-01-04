@@ -1,7 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import agrimaster from "../assets/img/proyectos/agrimaster.webp";
-import construmall from "../assets/img/proyectos/construmall.webp";
+import pedidosRapidos from "../assets/img/proyectos/pedidos-rapidos.webp";
 import soccerstore from "../assets/img/proyectos/soccerstore.webp";
 import uptask2023 from "../assets/img/proyectos/uptask2023.webp";
 import doctorweb from "../assets/img/proyectos/doctorweb.webp";
@@ -10,7 +9,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projectsPersonal = [
+  const projectsWeb = [
     {
       title: "SoccerStore",
       description:
@@ -45,22 +44,13 @@ export const Projects = () => {
     },
   ];
 
-  const projectsVirtualPro = [
+  const projectsMobile = [
     {
-      title: "Agrimaster",
-      description:
-        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / Express / MySQL",
-      imgUrl: agrimaster,
-      url: "https://www.agrimastersrl.com.bo/",
-      github: false,
-    },
-    {
-      title: "Construmall",
-      description:
-        "HTML / CSS / SCSS / Bootstrap / JavaScript / TypeScript / React.js / Vite / Node.js / Express / MySQL",
-      imgUrl: construmall,
-      url: "https://www.construmall.com.bo/",
-      github: false,
+      title: "PedidosRapidos",
+      description: "JavaScript / TypeScript / React Native / Tailwindcss",
+      imgUrl: pedidosRapidos,
+      url: false,
+      github: "https://github.com/MartinLaRosa27/PedidosRapidos",
     },
   ];
 
@@ -89,10 +79,12 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Personales</Nav.Link>
+                        <Nav.Link eventKey="first">Aplicaciones Web</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">VirtualPro</Nav.Link>
+                        <Nav.Link eventKey="second">
+                          Aplicaciones Móviles
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -103,7 +95,7 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projectsPersonal.map((project, index) => {
+                          {projectsWeb.map((project, index) => {
                             return (
                               <ProjectCard key={index} project={project} />
                             );
@@ -112,7 +104,7 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projectsVirtualPro.map((project, index) => {
+                          {projectsMobile.map((project, index) => {
                             return (
                               <ProjectCard key={index} project={project} />
                             );
