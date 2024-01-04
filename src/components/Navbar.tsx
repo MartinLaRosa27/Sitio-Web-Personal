@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import larosa_cv from "../larosa_cv.pdf";
+import larosa_cv from "../LaRosa_cv.pdf";
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
